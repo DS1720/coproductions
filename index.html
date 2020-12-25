@@ -1,11 +1,81 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-    <title>This is the title of the webpage!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Hello, world!</title>
 </head>
-<body>
-<p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-<div>hello</div>
+<body data-spy="scroll" data-target="#navigation" data-offset="0" tabindex="0">
+
+<section id="start">
+    <div>
+        <div id="left-container">
+            <div id="logo-container" class="logo-font">
+                <span id="left-item">CO-PROD.</span>
+                <span id="right-top-item">WORDS</span>
+                <span id="right-bottom-item">PICS</span>
+                <span id="bottom-item">
+                        <div>
+                            <a href="#journal">Journalistisches</a> - <a href="#theater">Theatertexte</a>
+                        </div>
+                        <div>
+                            <a href="#prosa">Prosa</a> -  <a href="#pico">Pico</a>
+                        </div>
+                    </span>
+            </div>
+            <a href="#journal" class="arrow-container">
+                <div class="arrow"></div>
+                <div class="arrow"></div>
+                <div class="arrow"></div>
+            </a>
+        </div>
+    </div>
+</section>
+<nav id="navigation" class="sticky-top">
+    <a class="navbar-brand logo-font" href="#start">
+        CO-Productions
+    </a>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="#journal">Journalistisches</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#theater">Theatertexte</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#prosa">Prosa</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#pico">Pico</a>
+        </li>
+    </ul>
+</nav>
+<section id="journal">
+    <h1>Journalistisches</h1>
+    Dies sind meine Journalistischen Texte
+</section>
+<section id="theater">
+    <h1>Theatertexte</h1>
+</section>
+<section id="prosa">
+    <h1>Prosa</h1>
+</section>
+<section id="pico">
+    <h1>Pico</h1>
+</section>
 </body>
 </html>
